@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parity_hack.js",
+  "dependencies": {
+    "ethereumjs-testrpc": "^6.0.1",
+    "web3": "^0.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-block": "testrpc -l 4500000000000",
+    "run": "node app2.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
