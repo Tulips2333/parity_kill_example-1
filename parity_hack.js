@@ -47,12 +47,12 @@ deployed.then(deployed_Contract=>{
 	//check result
 	console.log(`Is ${default_eht_account} an owner of contract ${deployed_Contract.address} : ${Contract_instance.isOwner(default_eht_account)} \r\n `)
 	//kill...
-	console.log("kill contract and try to run isOwner again... should get error if contract was succesfully killed\r\n")
+	console.log(`killing the contract ${deployed_Contract.address} \r\n`)
 	
 	let kill_get_data = Contract_instance.kill.getData(default_eht_account);
 	
 	web3.eth.sendTransaction({to:deployed_Contract.address, from:default_eht_account, data: kill_get_data,gas:4700000});
-
+	//Trying to call isOwner again if contract is dead it will throw an error...
 	Contract_instance.isOwner(default_eht_account,(err,res)=>{
 		if(err){
 			console.log(`Contract: ${deployed_Contract.address} has been succesfully killed\r\n`)
