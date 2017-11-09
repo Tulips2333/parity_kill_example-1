@@ -55,7 +55,7 @@ deployed.then(deployed_Contract=>{
 	//Trying to call isOwner again if contract is dead it will throw an error...
 	Contract_instance.isOwner(default_eht_account,(err,res)=>{
 		if(err){
-			console.log(`Contract: ${deployed_Contract.address} has been succesfully killed\r\n`)
+			console.log(`I accidentally killed it. (${deployed_Contract.address})\r\n`)
 			return;
 		}
 		console.log(`Something went fron and contract is still alive`)
