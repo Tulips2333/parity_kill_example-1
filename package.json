@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start-block": "testrpc -l 4500000000000",
-    "run": "node parity_hack.js"
+    "start": "node parity_hack.js"
   },
   "author": "",
   "license": "ISC"
