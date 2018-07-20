@@ -58,7 +58,7 @@ deployed.then(deployed_Contract=>{
 			console.log(`I accidentally killed it. (${deployed_Contract.address})\r\n`)
 			return;
 		}
-		console.log(`Something went fron and contract is still alive`)
+		console.log(`Something went wrong and contract is still alive`)
 	})
 
 
